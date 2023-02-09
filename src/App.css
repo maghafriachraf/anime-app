@@ -448,7 +448,7 @@ option {
   
   font-size: var(--normal-font-size);
   height: 30px;
-  
+  font-family: var(--body-font);
   padding: var(--btn-size);
   border-radius: .5rem;
   display: flex;
@@ -503,6 +503,7 @@ option {
   border-radius: .5rem;
   margin: var(--mb-3);
   border: 2px solid var(--first-color-alt);
+  bottom: 50px;
 }
 
 .gofav:hover, .gobackDetails:hover{

@@ -1,9 +1,11 @@
 import React, { useState, useEffect}  from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import Footer from "./Footer"
+
 
 function Details({favories, updateFav,details}){
-        const [item, setItem]=useState([])
+        
         const [title,setTitle]= useState('');
         const [descrip,setDescrip]= useState('');
         const [poster,setPoster]= useState('');
@@ -15,7 +17,7 @@ const getDetails = () => {
 console.log();
     axios
     .get(`https://kitsu.io/api/edge/anime/${details}`)
-    .then((response) => {setItem(response.data)
+    .then((response) => {
                         setTitle(response.data.data.attributes.titles.en_jp);
                         setDescrip(response.data.data.attributes.description);
                         setPoster(response.data.data.attributes.posterImage.original);
@@ -29,7 +31,7 @@ console.log();
 
   useEffect(() => {
     getDetails();
-  }, [])
+  }, [favories])
   
      
     
@@ -51,17 +53,17 @@ console.log();
             </div>
             
             {currentAnimeAdded ? (
-              <div className="btn removefav">
-           <a   onClick={() => updateFav(favories.filter(el => el.id !== details))}>
-              Retirer des favoris <i className="uis uis-favorite icon"></i>
-            </a>
-            </div>
+              
+                <button className="btn removefav" onClick={() => updateFav(favories.filter(el => el.id !== details))}>
+                  Retirer des favoris <i className="uis uis-favorite icon"></i>
+                </button>
+            
              ) : (
-              <div className="btn addfav">
-           <a  onClick={() => updateFav([...favories, {id : details, poster : poster}])}>
+              
+              <button className="btn addfav" onClick={() => updateFav([...favories, {id : details, poster : poster}])}>
                Ajouter aux favoris <i className="uil uil-favorite icon"></i>
-           </a>
-              </div>
+              </button>
+              
             )}   
             
             <div className="description">{descrip}</div>
@@ -76,11 +78,7 @@ console.log();
               
 
               
-              <Link className="btn gofav" to={`/favoris`} >
-              <div >
-                Voir les favoris <i className="uis uis-favorite .icon"></i>
-                </div> 
-              </Link>
+                  <Footer></Footer>
              
               
             

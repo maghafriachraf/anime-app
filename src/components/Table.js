@@ -33,16 +33,22 @@ function Table({setDetails,initialData}) {
     if(search || selectedYear || selectedAge){
       setfilter(true)
     if(search) {
+      setSelectedAge("")
+      setSelectedYear("")
       setfData(initialData.filter(d =>
       d.attributes.titles.en_jp.toLowerCase().includes(search.toLowerCase())
     ))}
 
     if(selectedYear) {
+      setSelectedAge("")
+      setSearch("")
       setfData(initialData.filter(d =>
       d.attributes.startDate.toLowerCase().includes(selectedYear.toLowerCase())
     ))}
 
     if(selectedAge) {
+      setSearch("")
+      setSelectedYear("")
       setfData(initialData.filter(d =>
       d.attributes.ageRatingGuide.toLowerCase().includes(selectedAge.toLowerCase())
     ))}
@@ -52,11 +58,11 @@ function Table({setDetails,initialData}) {
     
   } 
 
-  },[search, selectedYear, selectedAge])
+  },[search, selectedYear, selectedAge,initialData])
  
   const data = React.useMemo(() => 
   (filterOn) ? (filteredData) : (initialData) 
-  , (filterOn) ? [filteredData] : [initialData] );
+  , [filterOn, filteredData, initialData] );
     
     
     const columns = React.useMemo(() => ([
