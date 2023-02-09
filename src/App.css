@@ -426,7 +426,7 @@ option {
 
 .title{
   font-size: var(--h1-font-size); 
-  color: rgb(19, 19, 19);
+  color: rgb(24, 24, 24);
 }
 
 .rang{
@@ -440,7 +440,7 @@ option {
   font-size: var(--normal-font-size);
   margin-top: var(--mb-1);
   left: 0px;
-  color: rgb(19, 19, 19);
+  color: rgb(24, 24, 24);
 }
 
 
@@ -496,14 +496,13 @@ option {
 }
 
 .gofav{
-  position: absolute;
+  position: relative;
   width: var(--btn-w);
   background-color: var(--first-color-alt);
-  right: 0px;
   border-radius: .5rem;
   margin: var(--mb-3);
+  margin-left: 80%;
   border: 2px solid var(--first-color-alt);
-  bottom: 50px;
 }
 
 .gofav:hover, .gobackDetails:hover{
@@ -513,6 +512,10 @@ option {
 .gofav , .gobackDetails, .gobackFav  { 
   color: white;
   text-decoration: none;
+ }
+
+ .moreDetails{
+  color: rgb(24, 24, 24);
  }
 
 .fav-list{
@@ -560,6 +563,6 @@ object-fit: cover;
 }
 
 .footer{
-  display: flex;
+  position: relative;
 }
 
