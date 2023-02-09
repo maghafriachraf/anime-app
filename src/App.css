@@ -5,7 +5,7 @@
   --header-height: 3rem;
   /* colors */
   /* favorite color */
-  --fav-color: 300; /*main color : you can change it from here*/
+  --fav-color: 620; /*main color : you can change it from here*/
   --first-color: hsl(var(--fav-color), 69%, 61%);
   --first-color-second: hsl(var(--fav-color), 69%, 61%);
   --first-color-alt: hsl(var(--fav-color), 57%, 53%);
@@ -68,7 +68,8 @@
       /*font*/
       --big-font-size:35px;
       --h1-font-size:30px;
-      --h2-font-size:20px;
+      --h2-font-size:17.5px;
+      
       --normal-font-size:14px;
 
       /* === Marges === */
@@ -128,7 +129,7 @@
            /*font*/
       --big-font-size:40px;
       --h1-font-size:35px;
-      --h2-font-size:25px;
+      --h2-font-size:20px;
       --normal-font-size:14.5px;
 
       /* === Marges === */
@@ -188,7 +189,7 @@
              /*font*/
         --big-font-size:35px;
         --h1-font-size:40px;
-        --h2-font-size:30px;
+        --h2-font-size:22.5px;
         --normal-font-size:15px;
   
         /* === Marges === */
@@ -248,7 +249,7 @@
              /*font*/
         --big-font-size:40px;
         --h1-font-size:45px;
-        --h2-font-size:35px;
+        --h2-font-size:25px;
         --normal-font-size:15.5px;
   
         /* === Marges === */
