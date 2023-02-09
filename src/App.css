@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+  :root{
+  --header-height: 3rem;
+  /* colors */
+  /* favorite color */
+  --fav-color: 300; /*main color : you can change it from here*/
+  --first-color: hsl(var(--fav-color), 69%, 61%);
+  --first-color-second: hsl(var(--fav-color), 69%, 61%);
+  --first-color-alt: hsl(var(--fav-color), 57%, 53%);
+  --first-color-light: hsl(var(--fav-color), 92%, 90%);
+  --first-color-backroungd: hsl(var(--fav-color), 40%, 95%);
+ 
+    /* font and typography */
+  --body-font: 'Poppins', sans-serif;
+
+
+
+
+/*sizes and dimensions*/
+  }
+
+  @media screen and (max-width: 1250px){
+    :root{
+      /*sizes*/
+        /*goback details*/
+        --goback-d-top: 40px;
+        /*button*/
+        --btn-w : 200px;
+        --btn-size : 0px;
+        /*retourner au cataglogue btn*/
+        --goback-w : 43px;
+        /*table*/
+        --case-padding : 4px;
+        --case-w: 100px;
+        /*filters*/
+        --search-w:25%;
+        --search-h:40px;
+        --select-w:21%;
+        --select-h:40px;
+        --select-margin: 2%;
+        --select-p-left: 20px;
+        --filter-padding: 10px, 16px, 10px, 16px;
+        /*on details page*/
+        /*cover*/
+        --cover-x-dtls: 5%;
+        --cover-w-dtls: 720px;
+        --cover-h-dtls: 200px;
+        /*poster*/
+        --poster-h-dtls:202px;
+        --poster-w-dtls:calc(202*0.69px);
+        
+        --poster-x-dtls:10%;
+        --poster-y-dtls:-70px;
+        /*infos*/
+        --infos-w:550px;
+        --infos-y:-225px;
+        --infos-x:250px;
+
+        /*item-favoris*/
+        --margin-item:4.16%;
+        --item-h:270px;
+        --item-w:calc(270*0.69px);
+
+
+
+      /*font*/
+      --big-font-size:35px;
+      --h1-font-size:30px;
+      --h2-font-size:20px;
+      --normal-font-size:14px;
+
+      /* === Marges === */
+        /* 0.25rem = 4px, 5rm = 8px, .75= 12px */
+       
+        --mb-0-5: .5rem;
+        --mb-0-75: .75rem;
+        --mb-1: 1rem;
+        --mb-1-5:1.5rem;
+        --mb-2:2rem;
+        --mb-2-5:2.5rem;
+        --mb-3:4rem;
+      }}
+
+  @media screen and (min-width: 1250px) and (max-width: 1500px) {
+    :root{
+      /*sizes*/
+        /*goback details*/
+        --goback-d-top: 50px;
+
+        /*button*/
+        --btn-w : 200px;
+        --btn-size : 1px;
+        /*table*/
+        --case-padding : 5px;
+        --case-w: 100px;
+        /*filters*/
+        --search-w:27%;
+        --search-h:42px;
+        --select-w:20%;
+        --select-h:42px;
+        --select-margin: 3%;
+        --select-p-left: 20px;
+        --filter-padding: 10px, 16px, 10px, 16px;
+        /*on details page*/
+        /*cover*/
+        --cover-x-dtls: 5%;
+        --cover-w-dtls: 900px;
+        --cover-h-dtls: calc(900*0.27px);
+        /*poster*/
+        --poster-h-dtls:243px;
+        --poster-w-dtls:calc(243*0.69px);
+        --poster-x-dtls:10%;
+        --poster-y-dtls:-85px;
+        /*infos*/
+         
+         --infos-w:725px;
+         --infos-y:-260px;
+         --infos-x:300px;
+
+         /*item-favoris*/
+         --margin-item:4.16%;
+         --item-h:350px;
+         --item-w:calc(350*0.69px);
+
+        
+           /*font*/
+      --big-font-size:40px;
+      --h1-font-size:35px;
+      --h2-font-size:25px;
+      --normal-font-size:14.5px;
+
+      /* === Marges === */
+        /* 0.25rem = 4px, 5rm = 8px, .75= 12px */
+       
+        --mb-0-5: .5rem;
+        --mb-0-75: .75rem;
+        --mb-1: 1rem;
+        --mb-1-5:1.5rem;
+        --mb-2:2rem;
+        --mb-2-5:2.5rem;
+        --mb-3:4rem;
+      }}
+
+@media screen and (min-width: 1500px) and (max-width: 1750px){
+  :root{
+ /*sizes*/
+
+        /*goback details*/
+        --goback-d-top: 60px;
+        /*button*/
+        --btn-w : 210px;
+        --btn-size : 2px;
+
+        /*table*/
+        --case-padding : 6px;
+        --case-w: 130px;
+        /*filters*/
+        --search-w:22%;
+        --search-h:44px;
+        --select-w:17%;
+        --select-h:44px;
+        --select-margin: 2%;
+        --select-p-left: 20px;
+        --filter-padding: 10px, 16px, 10px, 16px;
+        /*on details page*/
+        /*cover*/
+        --cover-x-dtls: 5%;
+        --cover-w-dtls: 1094px;
+        --cover-h-dtls: calc(1094*0.27px);
+        /*poster*/
+        --poster-h-dtls:295px;
+        --poster-w-dtls:calc(295*0.69px);
+        --poster-x-dtls:10%;
+        --poster-y-dtls:-103px;
+        /*infos*/
+         
+         --infos-w:825px;
+         --infos-y:-300px;
+         --infos-x:360px;
+
+         /*items favories*/
+         --margin-item:4.16%;
+         --item-h:423px;
+         --item-w:calc(423*0.69px);
+          
+             /*font*/
+        --big-font-size:35px;
+        --h1-font-size:40px;
+        --h2-font-size:30px;
+        --normal-font-size:15px;
+  
+        /* === Marges === */
+          /* 0.25rem = 4px, 5rm = 8px, .75= 12px */
+         
+          --mb-0-5: .5rem;
+          --mb-0-75: .75rem;
+          --mb-1: 1rem;
+          --mb-1-5:1.5rem;
+          --mb-2:2rem;
+          --mb-2-5:2.5rem;
+          --mb-3:5rem;
+    }}
+
+@media screen and (min-width: 1750px){
+  :root{
+    /*sizes*/
+        /*goback details*/
+        --goback-d-top: 70px;
+
+        /*button*/
+        --btn-w : 215px;
+        --btn-size : 3px;
+        /*table*/
+        --case-padding : 7px;
+        --case-w: 130px;
+        /*filters*/
+        --search-w:25%;
+        --search-h:48px;
+        --select-w:17%;
+        --select-h:48px;
+        --select-margin: 2%;
+        --select-p-left: 20px;
+        --filter-padding: 10px, 16px, 10px, 16px;
+        /*on details page*/
+        /*cover*/
+        --cover-x-dtls: 5%;
+        --cover-w-dtls: 1330px;
+        --cover-h-dtls: calc(1330*0.27px);
+        /*poster*/
+        --poster-h-dtls:358px;
+        --poster-w-dtls:calc(358*0.69px);
+        --poster-x-dtls:10%;
+        --poster-y-dtls:-125px;
+        /*infos*/
+         
+        --infos-w:1000px;
+        --infos-y:-350px;
+        --infos-x:430px;
+
+        /*items favories*/
+        --margin-item:4.16%;
+        --item-h:494px;
+        --item-w:calc(494*0.69px);
+
+          
+             /*font*/
+        --big-font-size:40px;
+        --h1-font-size:45px;
+        --h2-font-size:35px;
+        --normal-font-size:15.5px;
+  
+        /* === Marges === */
+          /* 0.25rem = 4px, 5rm = 8px, .75= 12px */
+         
+          --mb-0-5: .5rem;
+          --mb-0-75: .75rem;
+          --mb-1: 1rem;
+          --mb-1-5:1.5rem;
+          --mb-2:2rem;
+          --mb-2-5:2.5rem;
+          --mb-3:5rem;
+    }}
+
+body{
+  background-color: var(--first-color-backroungd);
+  font-family: var(--body-font);
+  margin: 0;
+  color: rgb(24, 24, 24);
+}
+
+ 
+.container {
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+  
+}
+
+
+.top{
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-75);
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  min-width: var(--case-w);
+  height: 30px;
+  padding: var(--case-padding);
+ 
+}
+
+td{
+  background-color: var(--first-color-light);
+  
+  border-bottom: 0.1px solid  var(--first-color-second);
+
+}
+th {
+  
+  color: white;
+  text-align: left;
+}
+thead th {
+  background-color: var(--first-color-alt);
+}
+
+tbody td {
+  position: relative;
+}
+
+/*FILTER*/
+
+
+.icon-search{
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: var(--normal-font-size);
+}
+input[type="text"] {
+  background-color: white;
+  color: var(--first-color-alt);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  border-left: 2px solid var(--first-color-light);
+  width: 100%;
+  outline: none !important;
+
+}
+
+.search{
+  position: relative;
+  margin-bottom: 1rem;
+  background-color: white;
+  color: var(--first-color-alt);
+  width: var(--search-w);
+  height: var(--search-h);
+  padding :var(--filter-padding);
+  border-radius: 5px;
+  display: inline-flex;
+}
+
+select {
+  background-color: var(--first-color-backroungd);
+  color: var(--first-color-alt);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: 2px solid var(--first-color-alt);
+  width: var(--select-w);
+  height: var(--select-h);
+  padding :var(--filter-padding);
+  padding-left: var(--select-p-left);
+  margin-left: var(--select-margin);
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--first-color-alt);
+  background-color: white;
+}
+
+option {
+  font-size: var(--normal-font-size);
+  background-color: white;
+  color: var(--first-color-alt);
+ 
+
+}
+
+
+/*DETAILS*/
+
+.cover_anime{
+  position: relative;
+  display: inline-block;  
+  overflow: hidden;
+  width: var(--cover-w-dtls);
+  height: var(--cover-h-dtls);
+  left: var(--cover-x-dtls);
+  border-radius: 20px;
+}
+
+.poster_anime{
+  position: relative; 
+  border-radius: 20px;
+  overflow: hidden;
+  height: var(--poster-h-dtls);
+  width: var(--poster-w-dtls);
+  left: var(--poster-x-dtls);
+  top: var(--poster-y-dtls);
+}
+
+.poster-img , .cover-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.infos{
+  position: relative;
+  width: var(--infos-w);
+  top: var(--infos-y);
+  left: var(--infos-x);
+}
+
+
+.top-infos{
+  position: relative;
+  margin-top: var(--mb-1);
+}
+
+.title{
+  font-size: var(--h1-font-size); 
+  color: rgb(19, 19, 19);
+}
+
+.rang{
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+  margin-left: var(--mb-1-5) ;
+}
+
+.description{
+  position: relative;
+  font-size: var(--normal-font-size);
+  margin-top: var(--mb-1);
+  left: 0px;
+  color: rgb(19, 19, 19);
+}
+
+
+.btn{
+  
+  font-size: var(--normal-font-size);
+  height: 30px;
+  
+  padding: var(--btn-size);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.addfav, .removefav{
+  height: 28px;
+  width: 225px;
+  position: relative;
+  margin-top: var(--mb-1);
+
+}
+
+.addfav{
+  background-color: var(--back-color);
+  border:  2px solid var(--first-color-alt) ;
+  color: var(--first-color-alt);
+}
+
+.removefav{
+  background-color: var(--first-color-alt);
+  border:  2px solid var(--first-color-alt) ;
+  color: white;
+}
+
+.addfav:hover{
+  background-color: var(--first-color-light);
+}
+
+.removefav:hover{
+  background-color: var(--first-color-second);
+}
+
+
+
+.gobackDetails{
+  position: absolute;
+  width: var(--btn-w);
+  background-color: var(--first-color-alt);
+  top: var(--goback-d-top);
+}
+
+.gofav{
+  position: absolute;
+  width: var(--btn-w);
+  background-color: var(--first-color-alt);
+  right: 0px;
+  border-radius: .5rem;
+  margin: var(--mb-3);
+  border: 2px solid var(--first-color-alt);
+}
+
+.gofav:hover, .gobackDetails:hover{
+  background-color: var(--first-color);
+}
+
+.gofav , .gobackDetails, .gobackFav  { 
+  color: white;
+  text-decoration: none;
+ }
+
+.fav-list{
+  list-style-type: none;
+  display: flex;
+  list-style-type: none;
+
+	flex-wrap: wrap;
+  max-width: default;
+
+}
+
+.fav-item{
+  
+  flex-direction: column;
+  display: flex;
+  background-color: black;
+  position: relative;
+  height:var(--item-h) ;
+  width: var(--item-w);
+  margin: var(--margin-item);
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fav-poster{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.topFav{
+  position: relative;
+}
+
+
+
+.gobackFav{
+  position: absolute;
+  right: 0px;
+  width: var(--btn-w);
+  background-color: var(--first-color-alt);
+  margin: var(--mb-1);
+}
+
+.footer{
+  display: flex;
+}
+
