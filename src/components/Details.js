@@ -31,7 +31,7 @@ console.log();
 
   useEffect(() => {
     getDetails();
-  }, [favories])
+  }, [getDetails])
   
      
     
