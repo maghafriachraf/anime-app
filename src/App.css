@@ -82,6 +82,10 @@
         --mb-2:2rem;
         --mb-2-5:2.5rem;
         --mb-3:4rem;
+
+        /*logo size*/
+        --logo-w:90px;
+        --logo-h:45px;
       }}
 
   @media screen and (min-width: 1250px) and (max-width: 1500px) {
@@ -142,6 +146,10 @@
         --mb-2:2rem;
         --mb-2-5:2.5rem;
         --mb-3:4rem;
+
+         /*logo size*/
+         --logo-w:95px;
+         --logo-h:50px;
       }}
 
 @media screen and (min-width: 1500px) and (max-width: 1750px){
@@ -202,6 +210,10 @@
           --mb-2:2rem;
           --mb-2-5:2.5rem;
           --mb-3:5rem;
+
+           /*logo size*/
+        --logo-w:100px;
+        --logo-h:50px;
     }}
 
 @media screen and (min-width: 1750px){
@@ -262,6 +274,10 @@
           --mb-2:2rem;
           --mb-2-5:2.5rem;
           --mb-3:5rem;
+
+           /*logo size*/
+        --logo-w:110px;
+        --logo-h:50px;
     }}
 
 body{
@@ -566,4 +582,25 @@ object-fit: cover;
 .footer{
   position: relative;
 }
+
+.page-banner {
+  color: var(--first-color-backroungd);
+  background-color: var(--first-color);
+  border-bottom: solid 15px var(--first-color-light);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-logo {
+   height:var(--logo-h);
+   width : var(--logo-w);
+   margin: var(--mb-1);
+}
+
+.page-title{
+  font-size: var(--h1-font-size);
+  margin: var(--mb-1);
+}
+
 

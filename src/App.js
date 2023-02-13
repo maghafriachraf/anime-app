@@ -1,6 +1,7 @@
 import Table from "./components/Table";
 import Details from "./components/Details";
 import Favories from "./components/Favories";
+import Banner from "./components/Banner";
 import "./App.css";
 import axios from 'axios';
 
@@ -41,9 +42,12 @@ function App(){
 
   
   return (
+    <div>
+      <Banner></Banner>  
+    
     <Router>
       
-                 
+                   
       <Routes>
         <Route exact path={"/"} element={<Table initialData={initialData} setDetails={setDetails} />} />
         <Route path={"/details"} element={<Details details={details} updateFav={updateFav} favories={favories} />} />
@@ -53,7 +57,7 @@ function App(){
         </Routes>
     </Router>
 
-
+    </div>
   );
 }
 
